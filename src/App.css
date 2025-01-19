@@ -1,0 +1,379 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #D0DDD0; /* Fundo geral */
+    color: #727D73; /* Cor do texto principal */
+}
+
+/* Navbar */
+.navbar {
+    background: #727D73; /* Fundo da navbar */
+    color: #F0F0D7; /* Cor do texto na navbar */
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    padding: 0.5em 1em;
+}
+
+.navbar ul li a {
+    color: #AAB99A; /* Links na navbar */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #F0F0D7; /* Cor ao passar o mouse */
+}
+
+.navbar a, .navbar button {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar a:hover, .navbar button:hover {
+    background-color: #AAB99A;
+    border-radius: 4px;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #727D73;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 150px;
+    border-radius: 4px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 12px;
+    color: white;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #AAB99A;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #F0F0D7; /* Fundo do formulário de login */
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 2em;
+    border: 1px solid #AAB99A; /* Borda do formulário */
+    border-radius: 5px;
+    background: #D0DDD0; /* Fundo interno do formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.login-container h2 {
+    color: #727D73; /* Título do formulário */
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.login-container input {
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #AAB99A; /* Borda dos inputs */
+    border-radius: 5px;
+    font-size: 1em;
+    background: #F0F0D7; /* Fundo dos inputs */
+    color: #727D73; /* Texto dos inputs */
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #727D73; /* Cor ao focar nos inputs */
+}
+
+.login-container button {
+    background: #727D73; /* Fundo do botão */
+    color: #F0F0D7; /* Texto do botão */
+    border: none;
+    padding: 0.8em;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #AAB99A; /* Fundo do botão ao passar o mouse */
+}
+
+/* Dashboard */
+main {
+    padding: 5em 2em; /* Espaçamento interno */
+    text-align: center;
+    background: #D0DDD0; /* Fundo do conteúdo principal */
+    color: #727D73; /* Cor do texto */
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #727D73;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #727D73;
+}
+
+/* Links e botões gerais */
+a {
+    color: #727D73;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #AAB99A;
+}
+
+button {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Atendimento Container */
+.atendimento-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #F0F0D7; /* Fundo do formulário de login */
+}
+
+.atendimento-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 2em;
+    border: 1px solid #AAB99A; /* Borda do formulário */
+    border-radius: 5px;
+    background: #D0DDD0; /* Fundo interno do formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.atendimento-container h2 {
+    color: #727D73; /* Título do formulário */
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.atendimento-container input {
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #AAB99A; /* Borda dos inputs */
+    border-radius: 5px;
+    font-size: 1em;
+    background: #F0F0D7; /* Fundo dos inputs */
+    color: #727D73; /* Texto dos inputs */
+}
+
+.atendimento-container input:focus {
+    outline: none;
+    border-color: #727D73; /* Cor ao focar nos inputs */
+}
+
+.atendimento-container button {
+    background: #727D73; /* Fundo do botão */
+    color: #F0F0D7; /* Texto do botão */
+    border: none;
+    padding: 0.8em;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.atendimento-container button:hover {
+    background: #AAB99A; /* Fundo do botão ao passar o mouse */
+}
+
+/* Chamado Container */
+.chamado-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #F0F0D7; /* Fundo do formulário de login */
+}
+
+.chamado-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 2em;
+    border: 1px solid #AAB99A; /* Borda do formulário */
+    border-radius: 5px;
+    background: #D0DDD0; /* Fundo interno do formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.chamado-container h2 {
+    color: #727D73; /* Título do formulário */
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.chamado-container input {
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #AAB99A; /* Borda dos inputs */
+    border-radius: 5px;
+    font-size: 1em;
+    background: #F0F0D7; /* Fundo dos inputs */
+    color: #727D73; /* Texto dos inputs */
+}
+
+.chamado-container input:focus {
+    outline: none;
+    border-color: #727D73; /* Cor ao focar nos inputs */
+}
+
+.chamado-container button {
+    background: #727D73; /* Fundo do botão */
+    color: #F0F0D7; /* Texto do botão */
+    border: none;
+    padding: 0.8em;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.chamado-container button:hover {
+    background: #AAB99A; /* Fundo do botão ao passar o mouse */
+}
+
+/* Tarefa Container */
+.tarefa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #F0F0D7; /* Fundo do formulário de login */
+}
+
+.tarefa-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 2em;
+    border: 1px solid #AAB99A; /* Borda do formulário */
+    border-radius: 5px;
+    background: #D0DDD0; /* Fundo interno do formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.tarefa-container h2 {
+    color: #727D73; /* Título do formulário */
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.tarefa-container input {
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #AAB99A; /* Borda dos inputs */
+    border-radius: 5px;
+    font-size: 1em;
+    background: #F0F0D7; /* Fundo dos inputs */
+    color: #727D73; /* Texto dos inputs */
+}
+
+.tarefa-container input:focus {
+    outline: none;
+    border-color: #727D73; /* Cor ao focar nos inputs */
+}
+
+.tarefa-container button {
+    background: #727D73; /* Fundo do botão */
+    color: #F0F0D7; /* Texto do botão */
+    border: none;
+    padding: 0.8em;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.tarefa-container button:hover {
+    background: #AAB99A; /* Fundo do botão ao passar o mouse */
+}
+
+/* Estilo para o relatório */
+.relatorio-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+  }
+  
+  .filtro-container {
+    margin-bottom: 20px;
+  }
+  
+  .filtro-container select,
+  .filtro-container input {
+    margin-right: 10px;
+    padding: 8px;
+  }
+  
+  .tabela-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabela-container th,
+  .tabela-container td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tabela-container th {
+    background-color: #ddd;
+  }  
