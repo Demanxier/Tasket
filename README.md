@@ -1,4 +1,7 @@
 Realizai um projeto parecido com java, mas gostaria de aplicar com NodeJS e o frontEnd com React.
+É um sistema que estou usando para controlar os atendimentos que eu realizo no time de suporte. 
+Como os tickets da empresa não são passados para meu nome, eu criei o sistema bem básico para eu controlar meus atendimentos e tarefas. 
+
 
 ```mermaid
 erDiagram
@@ -70,3 +73,4 @@ erDiagram
     chamados ||--o{ atendimento : "Atende"
     usuario ||--o{ atendimento : "Relaciona a"
 ```
+
