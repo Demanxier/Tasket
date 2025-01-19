@@ -1,7 +1,7 @@
 Realizai um projeto parecido com java, mas gostaria de aplicar com NodeJS e o frontEnd com React.
 
 ```mermaid
-classDiagram
+erDiagram
     role {
         int id PK
         varchar nome
@@ -32,11 +32,11 @@ classDiagram
         varchar titulo
         varchar descricao
         int id_status FK
-        int ticket_id UNIQUE
+        int ticket_id
         varchar ticket_titulo
         varchar ticket_status
         date ticket_dataCriacao
-        varchar ticket_resposavel
+        varchar ticket_responsavel
         varchar ticket_time
         varchar ticket_cliente
     }
@@ -61,11 +61,12 @@ classDiagram
         int id_usuario FK
     }
     
-    role --> usuario : usuario
-    usuario "1" --> "1..*" tarefa : tarefa
-    status --> chamados : chamados
-    status --> tarefa : tarefa
-    consultor --> atendimento : atendimento
-    chamados --> atendimento : atendimento
-    status --> atendimento : atendimento
+    role ||--o{ usuario : "Possui"
+    usuario ||--|| role : "É atribuído a"
+    usuario ||--o{ tarefa : "Possui"
+    status ||--o{ chamados : "Define o estado de"
+    status ||--o{ tarefa : "Define o estado de"
+    consultor ||--o{ atendimento : "Participa de"
+    chamados ||--o{ atendimento : "Atende"
+    usuario ||--o{ atendimento : "Relaciona a"
 ```
