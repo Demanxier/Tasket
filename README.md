@@ -1,5 +1,6 @@
 Realizai um projeto parecido com java, mas gostaria de aplicar com NodeJS e o frontEnd com React.
 
+```mermaid
 erDiagram
     role {
         int id PK
@@ -68,3 +69,4 @@ erDiagram
     consultor ||--o{ atendimento : "Participa de"
     chamados ||--o{ atendimento : "Atende"
     status ||--o{ atendimento : "Define o estado de"
+```
