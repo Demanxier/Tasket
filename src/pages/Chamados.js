@@ -29,8 +29,8 @@ const Chamados = () => {
             toast.error('Por favor, insira o ID do ticket.');
             return;
         }
-        const meuToken = '056815C8-FC0D-45BC-BA7B-6C2DCA4D7AE1';
-        const apiULR = `https://api.movidesk.com/public/v1/tickets?token=${meuToken}&id=${ticket_id}&$select=id,status,subject,createdDate,owner,ownerTeam&$expand=clients`;
+        const meuToken = 'TOKEN';
+        const apiULR = `URL do sistema de tickets da empresa`;
 
         // const response = await axios.get(apiULR);
         try {
