@@ -61,12 +61,11 @@ classDiagram
         int id_usuario FK
     }
     
-    role ||--o{ usuario : "Possui"
-    usuario ||--|| role : "É atribuído a"
-    usuario ||--o{ tarefa : "Possui"
-    status ||--o{ chamados : "Define o estado de"
-    status ||--o{ tarefa : "Define o estado de"
-    consultor ||--o{ atendimento : "Participa de"
-    chamados ||--o{ atendimento : "Atende"
-    status ||--o{ atendimento : "Define o estado de"
+    role --> usuario : usuario
+    usuario "1" --> "1..*" tarefa : tarefa
+    status --> chamados : chamados
+    status --> tarefa : tarefa
+    consultor --> atendimento : atendimento
+    chamados --> atendimento : atendimento
+    status --> atendimento : atendimento
 ```
