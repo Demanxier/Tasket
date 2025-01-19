@@ -1,7 +1,7 @@
 Realizai um projeto parecido com java, mas gostaria de aplicar com NodeJS e o frontEnd com React.
 
 ```mermaid
-erDiagram
+classDiagram
     role {
         int id PK
         varchar nome
